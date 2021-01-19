@@ -1,7 +1,7 @@
 # STUPID BRUTEFORCING OF THE SUBGLYPHS
 
 ## Intro
-The numbers in "sequence" are just meant to be the subglyphs and not to point at a specific order[[1](https://imgur.com/a/mkxUwqm)]. The number of variation for 10 characters and 26 choices each is 19,275,223,968,000[[2](https://www.hackmath.net/en/calculator/combinations-and-permutations?n=26&k=10&order=1&repeat=0)] (and that's too much).
+The numbers in the variable `sequence` are just meant to be the subglyphs and not to point at a specific order[[1](https://imgur.com/a/mkxUwqm)]. The number of variation for 10 characters and 26 choices each is 19,275,223,968,000[[2](https://www.hackmath.net/en/calculator/combinations-and-permutations?n=26&k=10&order=1&repeat=0)] (and that's too much).
 
 ## Presumptions
 As computations of all variations without repetition means factorial complexity, we needed to narrow down a few things:
