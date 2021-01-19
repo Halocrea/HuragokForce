@@ -45,7 +45,7 @@ using NTextCat;
  *      - the lower that number is, the most confident the program is about its deduction, 
  *      - trying 19 character long, non-spaced, english sentences gave me levels between 3953 and 3962,
  *      - based on this, the program will only store english sentences with a level of confidence equal 
- *        or smaller than 3964.
+ *        or smaller than 3960 [EDIT: was 3964, but running a test on 150,000 variations, it seemed to keep still too many results].
  * 
  * 
  * Annotations:
@@ -59,7 +59,7 @@ namespace HuragokForce
 {
     class Program
     {
-        private static float CONFIDENCE_THRESHOLD   = 3964; // 3964 or lower means pretty good chances that the permutation is of interest
+        private static float CONFIDENCE_THRESHOLD   = 3960; // 3960 or lower means pretty good chances that the permutation is of interest
         private static char[] ALPHABET              = new char[] { 'A', 'B', 'C', 'D', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W' }; 
         private static string[] SEQUENCE            = new string[] { "0", "1", "E", "2", "3", "0", "4", "5", "E", "6", "4", "2", "E", "E", "6", "7", "E", "Y", "E" };
         private static string FMT                   = "0000000000000";
@@ -121,7 +121,7 @@ namespace HuragokForce
 
             try
             {
-                StreamWriter sw = new StreamWriter("E:\\Test1.txt", true, Encoding.UTF8);
+                StreamWriter sw = new StreamWriter("C:\\bruteforce.txt", true, Encoding.UTF8);
                 sw.WriteLine(toSave.ToUpper());
                 sw.Close();
             }

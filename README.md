@@ -27,7 +27,7 @@ The issue is: the library (and many others, this one is actually performing pret
 But choices need to be made: I ran some tests, and the library gives a "level of confidence": 
 - the lower that number is, the most confident the program is about its deduction, 
 - trying 19 character long, non-spaced, english sentences gave me levels between 3953 and 3962,
-- based on this, the program will only store english sentences with a level of confidence equal or smaller than 3964.
+- based on this, the program will only store english sentences with a level of confidence equal or smaller than **3960**. [**EDIT**: was 3964, but running a test on 150,000 variations, it seemed to keep still too many results]
 
 
 ## Links & Resources
